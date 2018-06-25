@@ -3,7 +3,7 @@ proyectosweb
 
 ## problema
 
-Falta de apoyo y difusión de proyectos sustentables escolares en la educacion basica.
+Falta de apoyo y difusión a proyectos sustentables escolares en la educacion basica.
 
 ## objetivo
 
