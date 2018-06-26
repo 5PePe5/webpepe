@@ -10,7 +10,8 @@ Crear una plataforma donde se pueda dar difusión, apoyo en busqueda de recursos
 
 ## Solucion posible
 
-Por medio de la plataforma web se  buscaran patrocinadores,vinculación con asociaciones, crear colectas electronicas para el apoyo de los mismos.
+Por medio de la plataforma web se  buscaran patrocinadores,vinculación con asociaciones, crear colectas electronicas para el apoyo de los mismos. 
+Todo esto en el marco de la nueva reforma educativa.
 
 
 
