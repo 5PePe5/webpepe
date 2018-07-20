@@ -6,9 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <link rel="stylesheet" href="./css/footer.css">
   <link rel="stylesheet" href="./css/gridinicio.css">
   <link rel="stylesheet" href="./css/contenido.css">
   <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
 
 </head>
@@ -21,198 +23,131 @@
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
   <div ng-app="appHttp">
-    <header class="encabezado">
+
+    <header>
+        <div class="menu_bar">
+            <a href="#" class="bt-menu">
+                <span class="icon-menu"></span>Menú</a>
+            </div>
+            <nav>
       <ul>
-        <li>
-          <a href="#/!">Inicio</a>
+        <li><a href="#/!"><span class="icon-home2"></span>Inicio</a></li>
+        <li class="submenu">
+        <a href="#!proyectos"><span class="icon-home2"></span>Proyectos</a>
+        <ul class="children">
+            <li><a href="#">SubElemento #1<span class="icon-dot"></span></a></li>
+            <li><a href="#">SubElemento #2<span class="icon-dot"></span></a></li>
+            <li><a href="#">SubElemento #3<span class="icon-dot"></span></a></li>
+          </ul>
         </li>
-        <li>
-          <a href="#!proyectos">Proyectos</a>
-        </li>
-        <li>
-          <a href="#!creaunacolecta">Crea una colecta</a>
-        </li>
-        <li>
-            <a href="#!Como donar">Como donar</a>
-          </li>
-          <li>
-              <a href="#!contacto">Contacto</a>
-            </li>
-          <li>
-              <a href="#!quienessomos">Quienes somos</a>
-            </li>
-
+        <li><a href="#!creaunacolecta"><span class="icon-rocket"></span>Crea una colecta</a></li>
+        <li><a href="#!comodonar"><span class="icon-dot"></span>Como donar</a></li>
+          <li><a href="#!contacto"><span class="icon-dot"></span>Contacto</a></li>
+          <li><a href="#!quienessomos"><span class="icon-dot"></span>Quienes somos</a></li>
+            <li><a href="#!sitiosdeinteres"><span class="icon-mail"></span>Contacto</a></li>
       </ul>
-
-      <!-- <ul class="nav nav-pills">
-                <li class="nav-item">
-                  <a class="nav-link active" href="#!footer">Active</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#!header">Link</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#nav">Link</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#/!">Inicio</a>
-                </li>
-              </ul>-->
-    </header>
+    </nav>
     
+    </header>
+    <div class="social">
+        <ul>
+          <li><a href="#divinicio" class="icon-facebook2"></a></li>
+          <li><a href="#divfinal" class="icon-twitter"></a></li>
+          <li><a href=""  class="icon-facebook2"></a></li>
+          <li><a href=""  class="icon-facebook2"></a></li>
+          <li><a href="" class="icon-whatsapp"></a></li>
+        </ul>
+      </div>
   
     <div ng-view class="contenido"></div>
 
-
-    <footer class="page-footer font-small blue-grey lighten-5" id="footer">
-
-      <div style="background-color: #21d192;">
-        <div class="container">
-  
-          <!-- Grid row-->
-          <div class="row py-4 d-flex align-items-center">
-  
-            <!-- Grid column -->
-            <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
-              <h6 class="mb-0">Siguenos en las redes social!</h6>
-            </div>
-            <!-- Grid column -->
-  
-            <!-- Grid column -->
-            <div class="col-md-6 col-lg-7 text-center text-md-right">
-  
-              <!-- Facebook -->
-              <a class="fb-ic">
-                <i class="fa fa-facebook white-text mr-4"> </i>
-              </a>
-              <!-- Twitter -->
-              <a class="tw-ic">
-                <i class="fa fa-twitter white-text mr-4"> </i>
-              </a>
-              <!-- Google +-->
-              <a class="gplus-ic">
-                <i class="fa fa-google-plus white-text mr-4"> </i>
-              </a>
-              <!--Linkedin -->
-              <a class="li-ic">
-                <i class="fa fa-linkedin white-text mr-4"> </i>
-              </a>
-              <!--Instagram-->
-              <a class="ins-ic">
-                <i class="fa fa-instagram white-text"> </i>
-              </a>
-  
-            </div>
-            <!-- Grid column -->
-  
-          </div>
-          <!-- Grid row-->
-  
-        </div>
-      </div>
-  
-      <!-- Footer Links -->
-      <div class="container text-center text-md-left mt-5">
-  
-        <!-- Grid row -->
-        <div class="row mt-3 dark-grey-text">
-  
-          <!-- Grid column -->
-          <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
-  
-            <!-- Content -->
-            <h6 class="text-uppercase font-weight-bold">Company name</h6>
-            <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-            <p>Here you can use rows and columns here to organize your footer content. Lorem ipsum dolor sit amet, consectetur
-              adipisicing elit.</p>
-  
-          </div>
-          <!-- Grid column -->
-  
-          <!-- Grid column -->
-          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-  
-            <!-- Links -->
-            <h6 class="text-uppercase font-weight-bold">Products</h6>
-            <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-            <p>
-              <a class="dark-grey-text" href="#!">MDBootstrap</a>
-            </p>
-            <p>
-              <a class="dark-grey-text" href="#!">MDWordPress</a>
-            </p>
-            <p>
-              <a class="dark-grey-text" href="#!">BrandFlow</a>
-            </p>
-            <p>
-              <a class="dark-grey-text" href="#!">Bootstrap Angular</a>
-            </p>
-  
-          </div>
-          <!-- Grid column -->
-  
-          <!-- Grid column -->
-          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-  
-            <!-- Links -->
-            <h6 class="text-uppercase font-weight-bold">Useful links</h6>
-            <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-            <p>
-              <a class="dark-grey-text" href="#!">Your Account</a>
-            </p>
-            <p>
-              <a class="dark-grey-text" href="#!">Become an Affiliate</a>
-            </p>
-            <p>
-              <a class="dark-grey-text" href="#!">Shipping Rates</a>
-            </p>
-            <p>
-              <a class="dark-grey-text" href="#!">Help</a>
-            </p>
-  
-          </div>
-          <!-- Grid column -->
-  
-          <!-- Grid column -->
-          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-  
-            <!-- Links -->
-            <h6 class="text-uppercase font-weight-bold">Contact</h6>
-            <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-            <p>
-              <i class="fa fa-home mr-3"></i> New York, NY 10012, US</p>
-            <p>
-              <i class="fa fa-envelope mr-3"></i> info@example.com</p>
-            <p>
-              <i class="fa fa-phone mr-3"></i> + 01 234 567 88</p>
-            <p>
-              <i class="fa fa-print mr-3"></i> + 01 234 567 89</p>
-  
-          </div>
-          <!-- Grid column -->
-  
-        </div>
-        <!-- Grid row -->
-  
-      </div>
-      <!-- Footer Links -->
-  
-      <!-- Copyright -->
-      <div class="footer-copyright text-center text-black-50 py-3">© 2018 Copyright:
-        <a class="dark-grey-text" href="https://mdbootstrap.com/bootstrap-tutorial/"> MDBootstrap.com</a>
-      </div>
-      <!-- Copyright -->
-  
-    </footer>
-    <!-- Footer -->
-  
-
-  </div>
-
-
-  
-<!-- Footer -->
-
+    <footer>
+       
+        <div class="container-footer-all">
+         
+             <div class="container-body">
+ 
+                 <div class="colum1">
+                     <h1>Mas informacion de la compañia</h1>
+ 
+                     <p>Esta compañia se dedica a la venta de software integrado con un 
+                     conjunto de cosas que no se lo que estoy escribiendo, este 
+                     texto es solo para llenara informacion en el cuadro de informacion 
+                     de la compañia.</p>
+ 
+                 </div>
+ 
+                 <div class="colum2">
+ 
+                     <h1>Redes Sociales</h1>
+ 
+                     <div class="row">
+                         <img src="icon/facebook.png">
+                         <label>Siguenos en Facebook</label>
+                     </div>
+                     <div class="row">
+                         <img src="icon/twitter.png">
+                         <label>Siguenos en Twitter</label>
+                     </div>
+                     <div class="row">
+                         <img src="icon/instagram.png">
+                         <label>Siguenos en Instagram</label>
+                     </div>
+                     <div class="row">
+                         <img src="icon/google-plus.png">
+                         <label>Siguenos en Google Plus</label>
+                     </div>
+                     <div class="row">
+                         <img src="icon/pinterest.png">
+                         <label>Siguenos en Pinteres</label>
+                     </div>
+ 
+ 
+                 </div>
+ 
+                 <div class="colum3">
+ 
+                     <h1>Informacion Contactos</h1>
+ 
+                     <div class="row2">
+                         <img src="icon/house.png">
+                         <label>La Romana, 
+                         Republica Dominicana
+                         Manuel del Cabral
+                         Casa # 27</label>
+                     </div>
+ 
+                     <div class="row2">
+                         <img src="icon/smartphone.png">
+                         <label>+1-829-395-2064</label>
+                     </div>
+ 
+                     <div class="row2">
+                         <img src="icon/contact.png">
+                          <label>Cristiancedano1030@gmail.com</label>
+                     </div>
+ 
+                 </div>
+ 
+             </div>
+         
+         </div>
+         
+         <div class="container-footer">
+                <div class="footer">
+                     <div class="copyright">
+                         © 2017 Todos los Derechos Reservados | <a href="">Magtimus</a>
+                     </div>
+ 
+                     <div class="information">
+                         <a href="">Informacion Compañia</a> | <a href="">Privacion y Politica</a> | <a href="">Terminos y Condiciones</a>
+                     </div>
+                 </div>
+ 
+             </div>
+         
+     </footer>
+   
   
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>

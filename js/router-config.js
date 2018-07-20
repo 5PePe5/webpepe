@@ -1,18 +1,24 @@
 app.config(function($routeProvider) {
     $routeProvider
     .when("/", {
-        templateUrl : "main.htm"
+        templateUrl : "templetes/main.htm"
     })
     .when("/proyectos", {
-        templateUrl : "proyectos.htm"
+        templateUrl : "templetes/proyectos.htm"
     })
     .when("/contacto", {
-        templateUrl : "contacto.htm"
+        templateUrl : "templetes/contacto.htm"
     })
     .when("/quienessomos", {
-        templateUrl : "quienessomos.htm"
+        templateUrl : "templetes/quienessomos.htm"
+    })
+    .when("/comodonar", {
+        templateUrl : "templetes/comodonar.htm"
+    })
+    .when("/sitiosdeinteres", {
+        templateUrl : "templetes/sitiosdeinteres.htm"
     })
     .when("/creaunacolecta", {
-        templateUrl : "creaunacolecta.htm"
+        templateUrl : "templetes/creaunacolecta.htm"
     });
 });
