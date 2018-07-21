@@ -20,5 +20,9 @@ app.config(function($routeProvider) {
     })
     .when("/creaunacolecta", {
         templateUrl : "templetes/creaunacolecta.htm"
+    })
+    .when("/login", {
+            templateUrl : "templetes/login.htm"
+    
     });
 });
