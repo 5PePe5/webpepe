@@ -24,5 +24,9 @@ app.config(function($routeProvider) {
     .when("/login", {
             templateUrl : "templetes/login.htm"
     
+    })
+    .when("/registro", {
+        templateUrl : "templetes/angular-http.html"
     });
+
 });

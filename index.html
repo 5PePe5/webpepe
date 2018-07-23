@@ -12,10 +12,12 @@
   <link rel="stylesheet" href="./css/contenido.css">
   <link rel="stylesheet" href="./css/header.css">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/proyectos.css">
 
 </head>
 
 <body>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
 
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
@@ -28,20 +30,24 @@
             </div>
             <nav>
       <ul>
+
         <li><a href="#/!"><span class="icon-home2"></span>Inicio</a></li>
-        <li class="submenu">
-        <a href="#!proyectos"><span class="icon-home2"></span>Proyectos</a>
+            <li class="submenu">
+        <a href="#!proyectos"><span class=""></span>Proyectos</a>
         <ul class="children">
             <li><a href="#">Proyecto #1<span class="icon-dot"></span></a></li>
             <li><a href="#">Proyecto #2<span class="icon-dot"></span></a></li>
             <li><a href="#">Proyecto #3<span class="icon-dot"></span></a></li>
-          </ul>
+            </ul>
         </li>
+
+
         <li><a href="#!creaunacolecta"><span class="icon-rocket"></span>Crea una colecta</a></li>
         <li><a href="#!comodonar"><span class="icon-dot"></span>Como donar</a></li>
           <li><a href="#!quienessomos"><span class="icon-dot"></span>Quienes somos</a></li>
             <li><a href="#!sitiosdeinteres"><span class="icon-mail"></span>Contacto</a></li>
-            <li><a href="#!login"><span class="icon-mail"></span>login</a></li>
+            <li><a href="#!login"><span class=""></span>login</a></li>
+            <li><a href="/templetes/register.htm" target="_blank"><span class=""></span>Registro</a></li>
       </ul>
     </nav>
     
@@ -55,7 +61,7 @@
           <li><a href="" class="icon-whatsapp"></a></li>
         </ul>
       </div>
-  
+
     <div ng-view class="contenido"></div>
 
     <footer>
@@ -103,22 +109,16 @@
                      <h1>Informacion Contactos</h1>
  
                      <div class="row2">
-                         <img src="img/icon/house.png">
-                         <label>Telmexhub, 
-                         Isabel la catolica
-                    
-                         sin # </label>
-                     </div>
+                         <img src="img/icon/house.png"><label>Telmexhub, Isabel la catolica sin # </label>
+                        </div>
  
                      <div class="row2">
-                         <img src="img/icon/smartphone.png">
-                         <label>56-56 -11-11</label>
-                     </div>
+                         <img src="img/icon/smartphone.png"><label>56-56 -11-11</label>
+                        </div>
  
                      <div class="row2">
-                         <img src="img/icon/contact.png">
-                          <label>compuaztec75@gmail.com</label>
-                     </div>
+                         <img src="img/icon/contact.png"><label>compuaztec75@gmail.com</label>
+                        </div>
  
                  </div>
  
@@ -128,24 +128,17 @@
          
          <div class="container-footer">
                 <div class="footer">
-                     <div class="copyright">
-                         © 2018 Todos los Derechos Reservados | <a href="">PePe</a>
-                     </div>
- 
-                     <div class="information">
-                         <a href="">Informacion del equipo</a> | <a href="">Aviso de Privacidad y Politicas</a> | <a href="">Terminos y Condiciones</a>
-                     </div>
-                 </div>
- 
-             </div>
+                     <div class="copyright"> © 2018 Todos los Derechos Reservados | <a href="">PePe</a></div>
+                     <div class="information"><a href="">Informacion del equipo</a> | <a href="">Aviso de Privacidad y Politicas</a> | <a href="">Terminos y Condiciones</a></div></div>
+                </div>
          
      </footer>
    
   
-  
-  <script src="../js/router-module.js"></script>
+
+  <script src="./js/router-module.js"></script>
   <script src="./js/router-config.js"></script>
-  <script></script>
+ 
 </body>
 
 </html>

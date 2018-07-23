@@ -1,3 +1,5 @@
+
+// animacion para el header responsivo
 $(document).ready(main);
  
 var contador = 1;
