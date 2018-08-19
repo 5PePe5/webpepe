@@ -1,0 +1,103 @@
+# instalar GIT
+
+  1. Update packetes de linux
+  
+    - $ sudo apt-get update
+
+  2. Instalar git desde los packetes de linux
+
+    - $ sudo apt-get install git
+  
+  3. comprobar que git está instalado
+  
+    - $ git -v
+
+# instalar NODE y NPM
+
+  1. instalar nvm (node version manager)
+    - $ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+    
+  2. Cerrar la terminal y volverla a abrir
+    
+  3. instalar node usando nvm
+    - $ nvm install node
+    
+  4. comprobar que node esté instalado
+    - $ node --version
+    
+  5. comprobar que npm esté instalado
+    - $ npm --version
+   
+# instalar bower globalmente
+
+  1. npm install -g bower
+  
+# instalar google-chrome
+
+  1. Entrar a https://www.google.com/chrome/
+  
+  2. Dar click en el botón de Download o Descargar
+  
+  3. Seleccionar: 64 bit .deb (For Debian/Ubuntu)
+  
+  4. En Descargas -> Click click el archivo recien descargado
+  
+  5. Abrirá el instalador de packetes de linux
+  
+  6. Dar click en Install Package
+  
+# instalar VisualStudio Code
+
+  1. Entrar a https://code.visualstudio.com/Download
+  
+  2. Seleccionar bajo Linux el .deb
+  
+  3. En Descargas -> Click click el archivo recien descargado
+  
+  4. Abrirá el instalador de packetes de linux
+  
+  5. Dar click en Install Package
+  
+# Verificar si se tiene una llave ssh
+
+  1. ls .a ~/.ssh
+  
+    - si sólo muestra un .config
+    
+  2. Seguir instrucciones en https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/
+  
+Adding a new SSH key to your GitHub account
+MAC WINDOWS LINUX
+To configure your GitHub account to use your new (or existing) SSH key, you'll also need to add it to your GitHub account.
+
+Before adding a new SSH key to your GitHub account, you should have:
+
+Checked for existing SSH keys
+Generated a new SSH key and added it to the ssh-agent
+After adding a new SSH key to your GitHub account, you can reconfigure any local repositories to use SSH. For more information, see "Switching remote URLs from HTTPS to SSH."
+
+Note: DSA keys were deprecated in OpenSSH 7.0. If your operating system uses OpenSSH, you'll need to use an alternate type of key when setting up SSH, such as an RSA key. For instance, if your operating system is MacOS Sierra, you can set up SSH using an RSA key.
+
+Copy the SSH key to your clipboard.
+
+If your SSH key file has a different name than the example code, modify the filename to match your current setup. When copying your key, don't add any newlines or whitespace.
+
+sudo apt-get install xclip
+# Downloads and installs xclip. If you don't have `apt-get`, you might need to use another installer (like `yum`)
+xclip -sel clip < ~/.ssh/id_rsa.pub
+# Copies the contents of the id_rsa.pub file to your clipboard
+Tip: If xclip isn't working, you can locate the hidden .ssh folder, open the file in your favorite text editor, and copy it to your clipboard.
+
+Settings icon in the user barIn the upper-right corner of any page, click your profile photo, then click Settings.
+
+Authentication keysIn the user settings sidebar, click SSH and GPG keys.
+
+SSH Key buttonClick New SSH key or Add SSH key.
+
+In the "Title" field, add a descriptive label for the new key. For example, if you're using a personal Mac, you might call this key "Personal MacBook Air".
+The key fieldPaste your key into the "Key" field.
+The Add key buttonClick Add SSH key.
+Sudo mode dialogIf prompted, confirm your GitHub password.
+  
+ 
+    
